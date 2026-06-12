@@ -1,0 +1,16 @@
+{
+  "name": "Competitive Crankshafts",
+  "short_name": "Competitive Cranks",
+  "description": "2-stroke crankshaft rebuilding for watercraft, snowmobiles, motorcycles and ATVs.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ed1b23",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
