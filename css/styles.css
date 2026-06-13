@@ -221,6 +221,26 @@ table.price tbody tr:hover { background: #fbfcff; }
 .page-hero h1 { color: var(--navy); font-size: clamp(2rem,4vw,2.8rem); font-weight: 800; }
 .page-hero p { color: var(--muted); margin-top: 12px; }
 
+/* Print header (only shows when printing the form) */
+.print-head { display: none; }
+
+/* Print: show only the mail-in form, clean for handwriting */
+@media print {
+  body * { visibility: hidden; }
+  #contact, #contact * { visibility: visible; }
+  #contact { position: absolute; left: 0; top: 0; width: 100%; padding: 0; }
+  #contact .container { max-width: 100%; padding: 0 12px; }
+  .no-print, .no-print * { display: none !important; visibility: hidden !important; }
+  .section-title, .section-lead { text-align: left !important; color: #000 !important; }
+  .contact-grid { display: block !important; }
+  .print-head { display: flex !important; align-items: center; gap: 16px; margin-bottom: 22px; padding-bottom: 14px; border-bottom: 2px solid #000; color: #000; }
+  .print-head img { height: 58px; width: auto; }
+  .field { margin-bottom: 18px; }
+  .field label { color: #000 !important; font-weight: 700; }
+  .field input, .field textarea { border: 1px solid #000 !important; background: #fff !important; min-height: 30px; }
+  @page { margin: 1.5cm; }
+}
+
 /* Nav dropdown */
 .has-dropdown { position: relative; }
 .has-dropdown > a::after { content: " ▾"; font-size: .7em; color: var(--muted); }

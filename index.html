@@ -49,7 +49,7 @@
         <a href="pricing.html">Pricing</a>
         <a href="faq.html">FAQ</a>
         <a href="index.html#contact">Contact</a>
-        <a href="index.html#contact" class="btn btn-sm">Get a Quote</a>
+        <a href="index.html#contact" class="btn btn-sm">Print This Form</a>
       </nav>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -63,9 +63,9 @@
       <div>
         <span class="hero-flag">★ 2-Stroke Crankshaft Specialists ★</span>
         <h1>Crankshafts,<br /><span class="accent">Rebuilt to Run Hard</span></h1>
-        <p class="hero-sub">Precision crankshaft rebuilding for personal watercraft, snowmobiles, motorcycles and ATVs. We disassemble, replace, weld, true, and balance — so your engine comes back tighter than the day it shipped.</p>
+        <p class="hero-sub">Precision crankshaft rebuilding for personal watercraft, snowmobiles, motorcycles and ATVs. We disassemble, replace, and true — so your crankshaft comes back tighter than the day it shipped.</p>
         <div class="hero-cta">
-          <a href="index.html#contact" class="btn btn-lg">Get a Quote</a>
+          <a href="index.html#contact" class="btn btn-lg">Print This Form</a>
           <a href="pricing.html" class="btn btn-lg btn-ghost">View Pricing</a>
         </div>
         <p class="hero-meta">PWC &amp; jet ski • Snowmobile • Motorcycle &amp; ATV</p>
@@ -188,22 +188,28 @@
 
   <section class="section" id="contact">
     <div class="container">
-      <h2 class="section-title">Get a Quote</h2>
-      <p class="section-lead">Tell us what you're running and what it needs. We'll get back to you with pricing and turnaround.</p>
+      <h2 class="section-title">Print This Form</h2>
+      <p class="section-lead">Fill this out, print it, and place it in the box with your crankshaft. It tells us whose core it is and where to send it back.</p>
       <div class="contact-grid">
-        <form class="contact-form" name="contact" method="POST" data-static-form>
-          <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required /></div>
-          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required /></div>
-          <div class="field"><label for="message">Make, model &amp; what it needs</label><textarea id="message" name="message" rows="4" placeholder="e.g. 2003 Sea-Doo 951, spun a bearing — need a full crank rebuild" required></textarea></div>
-          <button type="submit" class="btn btn-lg">Send Message</button>
-          <p class="form-note" data-form-status></p>
+        <form class="contact-form" id="ship-form">
+          <div class="print-head">
+            <img src="assets/img/logo.png" alt="Competitive Crankshafts" />
+            <div><strong>Mail-In Crankshaft Rebuild Form</strong><br />Ship to: 507 E 45th Street, Unit 300, Garden City, ID 83714 &nbsp;·&nbsp; 208-297-3344</div>
+          </div>
+          <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" /></div>
+          <div class="field"><label for="addr">Return address</label><textarea id="addr" name="addr" rows="3"></textarea></div>
+          <div class="field"><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" /></div>
+          <div class="field"><label for="email">Email (for return tracking)</label><input type="email" id="email" name="email" /></div>
+          <div class="field"><label for="notes">Special instructions</label><textarea id="notes" name="notes" rows="4"></textarea></div>
+          <button type="button" class="btn btn-lg no-print" onclick="window.print()">Print This Form</button>
+          <p class="form-note no-print">Print this page, then put the printed form in the box with your crankshaft before you ship it.</p>
         </form>
-        <div class="contact-details">
-          <h3>Reach us directly</h3>
+        <div class="contact-details no-print">
+          <h3>Ship your core to</h3>
+          <p><strong>Competitive Crankshafts</strong><br />507 E 45th Street, Unit 300<br />Garden City, ID 83714</p>
           <p><strong>Phone:</strong><br /><a href="tel:+12082973344">208-297-3344</a></p>
           <p><strong>Email:</strong><br /><a href="mailto:Jeffseebold@gmail.com">Jeffseebold@gmail.com</a></p>
-          <p><strong>Shop:</strong><br />507 E 45th Street, Unit 300<br />Garden City, ID 83714</p>
-          <p><strong>Service:</strong><br />Mail-in rebuilds accepted nationwide</p>
+          <p><strong>Tip:</strong> Call or email first for a quote and current turnaround.</p>
         </div>
       </div>
     </div>
